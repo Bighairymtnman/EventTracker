@@ -1,0 +1,100 @@
+/* General reset for consistent styles across browsers */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling for the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9; /* Light background color */
+    color: #333;
+    padding: 20px;
+}
+
+/* Wrapper container for app layout */
+.container {
+    max-width: 600px; /* Restrict width */
+    margin: 0 auto; /* Center the container */
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styles */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-top: 20px;
+}
+
+/* Form styling */
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+/* Styling for the Add Event button */
+button {
+    padding: 10px 20px;
+    background-color: #5c6bc0; /* Primary color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #3f51b5; /* Darker shade on hover */
+}
+
+/* Event list styling */
+ul {
+    list-style-type: none; /* Remove default bullet points */
+    margin-top: 20px;
+}
+
+li {
+    background-color: #fafafa; /* Light Gray */
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+/* Remove button styles */
+button.remove-btn {
+    background-color: #e74c3c; /* Red for Remove action */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 14px;
+    float: right; /* Align to the right of the list item */
+}
+
+button.remove-btn:hover {
+    background-color: #c0392b; /* Darker red on hover */
+}

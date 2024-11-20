@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Tracker</title>
+    <!-- Link to the CSS file for styling -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Container for the entire app -->
+    <div class="container">
+        <!-- App title -->
+        <h1>Event Tracker</h1>
+        <!-- Form for adding new events -->
+        <form id="eventForm">
+            <div class="form-group">
+                <label for="eventTitle">Event Title</label>
+                <input type="text" id="eventTitle" required>
+            </div>
+            <div class="form-group">
+                <label for="eventDate">Event Date</label>
+		<!-- Calendar button (browser) -->
+                <input type="date" id="eventDate" required>
+            </div>
+            <div class="form-group">
+                <label for="eventDescription">Event Description</label>
+                <textarea id="eventDescription" rows="4" required></textarea>
+            </div>
+            <!-- Submit button for adding events -->
+            <button type="submit">Add Event</button>
+        </form>
+        <!-- Section to display added events -->
+        <h2>Upcoming Events</h2>
+        <ul id="eventList"></ul>
+    </div>
+    <!-- Link to the JavaScript file for interactivity -->
+    <script src="scripts.js"></script>
+</body>
+</html>
